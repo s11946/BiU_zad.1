@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <link rel="stylesheet" href="styles/styles.css"/>
+    </head>
+    <body onload="init()">
+        <canvas id="canvas" width="400" height="300"></canvas>
+        <form id="controlPanel" name="controlPanel" onSubmit="return changeVelocity();">
+            Prędkość pozioma <input name="hv" id="hv" type="number" min="-10" max="10"/>
+            <br />
+            Prędkość pozioma <input name="vv" id="vv" type="number" min="-10" max="10"/>
+            <input type="submit" value="zmień" />
+            
+        </form>
+        <script type="application/javascript" src="scripts/moving-ball.js"></script>
+    </body>
+</html>
